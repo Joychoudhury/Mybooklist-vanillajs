@@ -28,7 +28,7 @@ document.getElementById('book-list').addEventListener('click', e=>removeBook(e))
 // functions
 
 function displayBooks(){
-    if(books !== [] ){
+    if(books !== null ){
         books.forEach(function(book){
             const list = document.getElementById('book-list');
             const tr = document.createElement('tr');
