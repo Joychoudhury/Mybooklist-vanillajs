@@ -6,16 +6,21 @@
 
 // books temp array
 books = JSON.parse(localStorage.getItem('books'));
-// {
-//     title: "The Design of EveryDay Things",
-//     author: "Don Norman",
-//     isbn: "978-0201633610"
-// },
-// {
-//     title: "The Most Human Human",
-//     author: "Brian Christian",
-//     isbn: "978-0307463710"
-// }
+if(books == null){
+ books=[
+ {
+    title: "The Design of EveryDay Things",
+    author: "Don Norman",
+    isbn: "978-0201633610"
+},
+{
+    title: "The Most Human Human",
+    author: "Brian Christian",
+    isbn: "978-0307463710"
+}
+ ]   ;
+}
+
 
 // variables
 
